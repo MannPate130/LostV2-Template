@@ -1,6 +1,6 @@
 ﻿namespace LostV2
 {
-    partial class Form1
+    partial class campingAdventure
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(campingAdventure));
             this.outputLabel = new System.Windows.Forms.Label();
             this.redLabel = new System.Windows.Forms.Label();
             this.blueLabel = new System.Windows.Forms.Label();
             this.blueImage = new System.Windows.Forms.PictureBox();
             this.redImage = new System.Windows.Forms.PictureBox();
+            this.yellowImage = new System.Windows.Forms.PictureBox();
+            this.yellowLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.blueImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellowImage)).BeginInit();
             this.SuspendLayout();
             // 
             // outputLabel
@@ -46,7 +49,6 @@
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(509, 396);
             this.outputLabel.TabIndex = 2;
-            this.outputLabel.Text = "label1";
             // 
             // redLabel
             // 
@@ -56,7 +58,6 @@
             this.redLabel.Name = "redLabel";
             this.redLabel.Size = new System.Drawing.Size(386, 35);
             this.redLabel.TabIndex = 3;
-            this.redLabel.Text = "label1";
             // 
             // blueLabel
             // 
@@ -66,7 +67,6 @@
             this.blueLabel.Name = "blueLabel";
             this.blueLabel.Size = new System.Drawing.Size(386, 35);
             this.blueLabel.TabIndex = 4;
-            this.blueLabel.Text = "label1";
             // 
             // blueImage
             // 
@@ -88,24 +88,47 @@
             this.redImage.TabIndex = 0;
             this.redImage.TabStop = false;
             // 
-            // Form1
+            // yellowImage
+            // 
+            this.yellowImage.Image = global::LostV2.Properties.Resources.yellow_50x50;
+            this.yellowImage.Location = new System.Drawing.Point(36, 578);
+            this.yellowImage.Name = "yellowImage";
+            this.yellowImage.Size = new System.Drawing.Size(59, 50);
+            this.yellowImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.yellowImage.TabIndex = 5;
+            this.yellowImage.TabStop = false;
+            // 
+            // yellowLabel
+            // 
+            this.yellowLabel.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yellowLabel.ForeColor = System.Drawing.Color.White;
+            this.yellowLabel.Location = new System.Drawing.Point(101, 593);
+            this.yellowLabel.Name = "yellowLabel";
+            this.yellowLabel.Size = new System.Drawing.Size(386, 35);
+            this.yellowLabel.TabIndex = 6;
+            // 
+            // campingAdventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(579, 649);
+            this.Controls.Add(this.yellowLabel);
+            this.Controls.Add(this.yellowImage);
             this.Controls.Add(this.blueLabel);
             this.Controls.Add(this.redLabel);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.blueImage);
             this.Controls.Add(this.redImage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "campingAdventure";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lost in a Forest";
+//            this.Load += new System.EventHandler(this.campingAdventure_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.blueImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellowImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -117,6 +140,8 @@
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Label redLabel;
         private System.Windows.Forms.Label blueLabel;
+        private System.Windows.Forms.PictureBox yellowImage;
+        private System.Windows.Forms.Label yellowLabel;
     }
 }
 
