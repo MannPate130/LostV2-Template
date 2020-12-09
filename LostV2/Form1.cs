@@ -38,8 +38,8 @@ namespace CampingAdventure
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            /// check to see what button has been pressed and advance
-            /// to the next appropriate scene
+            // check to see what button has been pressed and advance
+            // to the next appropriate scene
             if (e.KeyCode == Keys.M)       //red button press
             {
                 if (scene == 0)
@@ -510,7 +510,7 @@ namespace CampingAdventure
                     yellowLabel.Text = "";
                     break;
                 case 20:
-                    outputLabel.Text = "You and your friends decide not to be brave and run away";
+                    outputLabel.Text = "You and your friends decide not to be brave and run away to the safety of your camp";
                     redLabel.Text = "";
                     blueLabel.Text = "Continue";
                     yellowLabel.Text = "";
