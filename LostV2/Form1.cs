@@ -10,7 +10,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;  
+using System.Windows.Forms;
+using System.Media;
 
 namespace LostV2
 {
@@ -21,6 +22,12 @@ namespace LostV2
 
         // random number generator
         Random randGen = new Random();
+
+        // sound players
+        SoundPlayer Bear = new SoundPlayer(Properties.Resources.Bear_Sound);
+        SoundPlayer campFire = new SoundPlayer(Properties.Resources.Campfire);
+        SoundPlayer Death = new SoundPlayer(Properties.Resources.Death_sound);
+
         public campingAdventure()
         {
             InitializeComponent();
@@ -378,8 +385,10 @@ namespace LostV2
                     redLabel.Text = "Stay at camp";
                     blueLabel.Text = "Explore";
                     yellowLabel.Text = "Share Stories";
+                    campFire.Play();
                     break;
                 case 1:
+                    campFire.Stop();
                     outputLabel.Text = "You want to explore \n\nYour friends agree. \n\nYou start your exploration of the vast forest!";
                     redLabel.Text = "";
                     blueLabel.Text = "";
@@ -474,6 +483,7 @@ namespace LostV2
                     yellowLabel.Text = "Continue";
                     break;
                 case 16:
+                    campFire.Stop();
                     outputLabel.Text = "Your friends tell you a story about an abandoned house near where your camping \n\nDo you want to check it out?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
@@ -511,6 +521,7 @@ namespace LostV2
                     yellowLabel.Text = "Continue";
                     break;
                 case 22:
+                    Death.Play();
                     outputLabel.Text = "Game Over \n\n Play Again?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";

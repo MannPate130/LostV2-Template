@@ -118,6 +118,15 @@
   <ItemGroup>
     <None Include="Resources\jungle.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campfire for Camping Adventure.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grizzly Bear Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death sound.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
