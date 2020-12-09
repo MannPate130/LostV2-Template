@@ -100,11 +100,11 @@ namespace LostV2
                 }
                 else if (scene == 16)
                 {
-
+                    scene = 17;
                 }
                 else if (scene == 17)
                 {
-
+                    scene = 18;
                 }
                 else if (scene == 18)
                 {
@@ -199,23 +199,23 @@ namespace LostV2
                 }
                 else if (scene == 16)
                 {
-
+                    scene = 0;
                 }
                 else if (scene == 17)
                 {
-
+                    scene = 0;
                 }
                 else if (scene == 18)
                 {
-
+                    scene = 0;
                 }
                 else if (scene == 19)
                 {
-
+                    scene = 23;
                 }
                 else if (scene == 20)
                 {
-
+                    scene = 0;
                 }
                 else if (scene == 21)
                 {
@@ -235,7 +235,7 @@ namespace LostV2
             {
                 if (scene == 0)
                 {
-                    
+                    scene = 16;
                 }
                 else if (scene == 1)
                 {
@@ -307,7 +307,7 @@ namespace LostV2
                 }
                 else if (scene == 18)
                 {
-
+                    scene = 19;
                 }
                 else if (scene == 19)
                 {
@@ -335,31 +335,31 @@ namespace LostV2
                 switch (scene)
             {
                 case 0:
-                    outputLabel.Text = "You are in the middle of a forest. camping with your friends \n\n What is your next move?";
+                    outputLabel.Text = "You are in the middle of a forest. camping with your friends \n\nWhat is your next move?";
                     redLabel.Text = "Stay at camp";
                     blueLabel.Text = "Explore";
                     yellowLabel.Text = "Share Stories";
                     break;
                 case 1:
-                    outputLabel.Text = "You want to explore \n\n Your friends agree. \n\n You start your exploration of the vast forest!";
+                    outputLabel.Text = "You want to explore \n\nYour friends agree. \n\nYou start your exploration of the vast forest!";
                     redLabel.Text = "";
                     blueLabel.Text = "";
                     yellowLabel.Text = "Continue";
                     break;
                 case 2:
-                    outputLabel.Text = "one of your friends spots a wild fox \n\n Tame it?";
+                    outputLabel.Text = "one of your friends spots a wild fox \n\nTame it?";
                     redLabel.Text = "";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "Yes";
                     break;
                 case 3:
-                    outputLabel.Text = "It's unfortunate that you didn't tame the majestic fox \n\n Do you want to go back to camp?";
+                    outputLabel.Text = "It's unfortunate that you didn't tame the majestic fox \n\nDo you want to go back to camp?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     break;
                 case 4:
-                    outputLabel.Text = "You've successfully tamed the fox! \n He is now your pet";
+                    outputLabel.Text = "You've successfully tamed the fox! \n\nHe is now your pet";
                     redLabel.Text = "";
                     blueLabel.Text = "Continue";
                     yellowLabel.Text = "";
@@ -371,13 +371,13 @@ namespace LostV2
                     yellowLabel.Text = "";
                     break;
                 case 6:
-                    outputLabel.Text = "You decide you don't want to waste your time to get water \n\n You continue in the forest until you suddenly encounter a deadly Grizzly Bear \n\n What do you do?";
+                    outputLabel.Text = "You decide you don't want to waste your time to get water \n\nYou continue in the forest until you suddenly encounter a deadly Grizzly Bear \n\n What do you do?";
                     redLabel.Text = "Play Dead";
                     blueLabel.Text = "Run";
                     yellowLabel.Text = "Curl up and lay flat";
                     break;
                 case 7:
-                    outputLabel.Text = "You decide to go to the river to get water \n\n Do you drink the water?";
+                    outputLabel.Text = "You decide to go to the river to get water \n\nDo you drink the water?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
@@ -403,14 +403,14 @@ namespace LostV2
                     break;
                 case 11:
                     outputLabel.Text = "you decide to run away \n\nyou arrive back at camp and decide to go back \n\na week later your friends dead body is found along with the murder weapon " +
-                        "\n\nthrough forensic evidence your friends fingerprint came up on the murder weapon, he was taken in for questioning and you got taken in juvie for 6 monthes";
+                        "\n\nThrough forensic evidence your friends fingerprint came up on the murder weapon, he was taken in for questioning and you got taken in juvie for 6 monthes";
                     redLabel.Text = "";
                     blueLabel.Text = "";
                     yellowLabel.Text = "continue";
                     break;
                 case 12:
                     outputLabel.Text = "as the good friend you are, you call the ambulance \n\nthe ambulance arrives and your friend is taken to the hospital " +
-                        "\n\nyou go to check on your friend a day later to find out that he has somewhat recovered \n\ndo you speak of what happened?";
+                        "\n\nyou go to check on your friend a day later to find out that he has somewhat recovered\n\ndo you speak of what happened?";
                     redLabel.Text = "no";
                     blueLabel.Text = "yes";
                     yellowLabel.Text = "";
@@ -432,17 +432,38 @@ namespace LostV2
                         "\n\nyou come to the conclusion of forgiving your friend for pulling the trigger as he didn't know the gun was loaded";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "continue";
+                    yellowLabel.Text = "Continue";
                     break;
                 case 16:
+                    outputLabel.Text = "Your friends tell you a story about an abandoned house near where your camping \n\nDo you want to check it out?";
+                    redLabel.Text = "Yes";
+                    blueLabel.Text = "No";
+                    yellowLabel.Text = "";
                     break;
                 case 17:
+                    outputLabel.Text = "You and your friends decide to check out the abandoned house \n\n\nWhen you arrive you see a strange figure within \n\nContinue?";
+                    redLabel.Text = "Yes";
+                    blueLabel.Text = "No";
+                    yellowLabel.Text = "";
                     break;
                 case 18:
+                    outputLabel.Text = "You and your friends decide to be brave and walk through the front door \n\n\nAs soon as you open the front door you see the figure right in front of you" +
+                        "\n\nRun away?";
+                    redLabel.Text = "";
+                    blueLabel.Text = "Yes";
+                    yellowLabel.Text = "No";
                     break;
                 case 19:
+                    outputLabel.Text = "You and your friends successfully escaped the strange figure \n\n\nYou decide to explore the house and you find amazing treasure within!";
+                    redLabel.Text = "";
+                    blueLabel.Text = "Continue";
+                    yellowLabel.Text = "";
                     break;
                 case 20:
+                    outputLabel.Text = "You and your friends decide not to be brave and run away";
+                    redLabel.Text = "";
+                    blueLabel.Text = "Continue";
+                    yellowLabel.Text = "";
                     break;
                 case 21:
                     break;
@@ -453,7 +474,7 @@ namespace LostV2
                     yellowLabel.Text = "";
                     break;
                 case 23:
-                    outputLabel.Text = "\n\n\n\n\n              Thank you for Playing";
+                    outputLabel.Text = "\n\n\n\n\n\n\n\n          Thank you for Playing!";
                     redLabel.Text = "";
                     blueLabel.Text = "";
                     yellowLabel.Text = "";
