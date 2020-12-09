@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LostV2.Properties
+namespace CampingAdventure.Properties
 {
 
 

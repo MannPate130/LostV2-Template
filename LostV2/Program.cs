@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LostV2
+namespace CampingAdventure
 {
     static class Program
     {

@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
-namespace LostV2
+namespace CampingAdventure
 {
     public partial class campingAdventure : Form
     {

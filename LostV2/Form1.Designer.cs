@@ -1,4 +1,4 @@
-﻿namespace LostV2
+﻿namespace CampingAdventure
 {
     partial class campingAdventure
     {
@@ -70,7 +70,7 @@
             // 
             // blueImage
             // 
-            this.blueImage.Image = global::LostV2.Properties.Resources.blue_50x50;
+            this.blueImage.Image = global::CampingAdventure.Properties.Resources.blue_50x50;
             this.blueImage.Location = new System.Drawing.Point(36, 522);
             this.blueImage.Name = "blueImage";
             this.blueImage.Size = new System.Drawing.Size(59, 50);
@@ -80,7 +80,7 @@
             // 
             // redImage
             // 
-            this.redImage.Image = global::LostV2.Properties.Resources.red_50x50;
+            this.redImage.Image = global::CampingAdventure.Properties.Resources.red_50x50;
             this.redImage.Location = new System.Drawing.Point(36, 466);
             this.redImage.Name = "redImage";
             this.redImage.Size = new System.Drawing.Size(59, 50);
@@ -90,7 +90,7 @@
             // 
             // yellowImage
             // 
-            this.yellowImage.Image = global::LostV2.Properties.Resources.yellow_50x50;
+            this.yellowImage.Image = global::CampingAdventure.Properties.Resources.yellow_50x50;
             this.yellowImage.Location = new System.Drawing.Point(36, 578);
             this.yellowImage.Name = "yellowImage";
             this.yellowImage.Size = new System.Drawing.Size(59, 50);
