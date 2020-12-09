@@ -17,10 +17,10 @@ namespace LostV2
     public partial class campingAdventure : Form
     {
         // tracks what part of the game the user is at
-        int scene = 0;  
+        int scene = 0;
 
         // random number generator
-
+        Random randGen = new Random();
         public campingAdventure()
         {
             InitializeComponent();
@@ -64,7 +64,17 @@ namespace LostV2
                 }
                 else if (scene == 7)
                 {
-                    scene = 8;
+                    int water = randGen.Next(1,101);
+
+                    if (water < 50)
+                    {
+                        scene = 8;
+                    }
+                    else
+                    {
+                        scene = 9;
+                    }
+                    
                 }
                 else if (scene == 8)
                 {
@@ -104,7 +114,16 @@ namespace LostV2
                 }
                 else if (scene == 17)
                 {
-                    scene = 18;
+                    int run = randGen.Next(1,101);
+
+                    if (run < 70)
+                    {
+                        scene = 18;
+                    }
+                    else
+                    {
+                        scene = 22;
+                    }
                 }
                 else if (scene == 18)
                 {
@@ -243,7 +262,17 @@ namespace LostV2
                 }
                 else if (scene == 2)
                 {
-                    scene = 4;
+                    int value = randGen.Next(1,101);
+
+                    if (value > 60)
+                    {
+                        scene = 4;
+                    }
+                    else
+                    {
+                        scene = 3;
+                    }
+                    
                 }
                 else if (scene == 3)
                 {
