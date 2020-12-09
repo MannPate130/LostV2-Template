@@ -114,20 +114,11 @@ namespace LostV2
                 }
                 else if (scene == 17)
                 {
-                    int run = randGen.Next(1,101);
-
-                    if (run < 70)
-                    {
                         scene = 18;
-                    }
-                    else
-                    {
-                        scene = 22;
-                    }
                 }
                 else if (scene == 18)
                 {
-
+                    
                 }
                 else if (scene == 19)
                 {
@@ -226,7 +217,16 @@ namespace LostV2
                 }
                 else if (scene == 18)
                 {
-                    scene = 0;
+                    int run = randGen.Next(1, 101);
+
+                    if (run < 70)
+                    {
+                        scene = 20;
+                    }
+                    else
+                    {
+                        scene = 22;
+                    }
                 }
                 else if (scene == 19)
                 {
