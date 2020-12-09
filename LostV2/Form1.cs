@@ -193,7 +193,7 @@ namespace LostV2
                 }
                 else if (scene == 12)
                 {
-
+                    scene = 15;
                 }
                 else if (scene == 13)
                 {
@@ -336,7 +336,17 @@ namespace LostV2
                 }
                 else if (scene == 18)
                 {
-                    scene = 19;
+                    int away = randGen.Next(1,11);
+
+                    if (away < 3)
+                    {
+                        scene = 19;
+                    }
+                    else
+                    {
+                        scene = 21;
+                    }
+                    
                 }
                 else if (scene == 19)
                 {
@@ -348,7 +358,7 @@ namespace LostV2
                 }
                 else if (scene == 21)
                 {
-
+                    scene = 22;
                 }
                 else if (scene == 22)
                 {
@@ -495,6 +505,10 @@ namespace LostV2
                     yellowLabel.Text = "";
                     break;
                 case 21:
+                    outputLabel.Text = "You didn't survive the fight between the strange figure";
+                    redLabel.Text = "";
+                    blueLabel.Text = "";
+                    yellowLabel.Text = "Continue";
                     break;
                 case 22:
                     outputLabel.Text = "Game Over \n\n Play Again?";
