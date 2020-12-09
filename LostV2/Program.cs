@@ -16,7 +16,7 @@ namespace CampingAdventure
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new campingAdventure());
+            Application.Run(new Form1());
         }
     }
 }

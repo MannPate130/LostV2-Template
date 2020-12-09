@@ -1,5 +1,5 @@
 ﻿/// created by : Mann Patel 
-/// date       : December
+/// date       : December 9, 2020
 /// description: A Fun Adventure Game
 
 using System;
@@ -15,7 +15,7 @@ using System.Media;
 
 namespace CampingAdventure
 {
-    public partial class campingAdventure : Form
+    public partial class Form1 : Form
     {
         // tracks what part of the game the user is at
         int scene = 0;
@@ -24,15 +24,16 @@ namespace CampingAdventure
         Random randGen = new Random();
 
         // sound players
-        SoundPlayer Bear = new SoundPlayer(Properties.Resources.Bear_Sound);
-        SoundPlayer campFire = new SoundPlayer(Properties.Resources.Campfire);
-        SoundPlayer Death = new SoundPlayer(Properties.Resources.Death_sound);
+        SoundPlayer deathPlayer = new SoundPlayer(LostV2.Properties.Resources.Death_sound);
+        SoundPlayer grizzlyBear = new SoundPlayer(LostV2.Properties.Resources.GrizzlyBear);
+        SoundPlayer campFire = new SoundPlayer(LostV2.Properties.Resources.CampfireAdventure);
 
-        public campingAdventure()
+        public Form1()
         {
             InitializeComponent();
 
             outputLabel.Text = "Welcome! To the start of your amazing Adventure!"; //display initial message and options
+            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -521,7 +522,7 @@ namespace CampingAdventure
                     yellowLabel.Text = "Continue";
                     break;
                 case 22:
-                    Death.Play();
+                    deathPlayer.Play();
                     outputLabel.Text = "Game Over \n\n Play Again?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";

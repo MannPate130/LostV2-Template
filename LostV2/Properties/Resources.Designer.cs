@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CampingAdventure.Properties {
+namespace LostV2.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CampingAdventure.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CampingAdventure.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LostV2.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,15 +61,6 @@ namespace CampingAdventure.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Bear_Sound {
-            get {
-                return ResourceManager.GetStream("Bear Sound", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap blue_50x50 {
@@ -82,18 +73,9 @@ namespace CampingAdventure.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream brook {
+        internal static System.IO.UnmanagedMemoryStream CampfireAdventure {
             get {
-                return ResourceManager.GetStream("brook", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Campfire {
-            get {
-                return ResourceManager.GetStream("Campfire", resourceCulture);
+                return ResourceManager.GetStream("CampfireAdventure", resourceCulture);
             }
         }
         
@@ -139,9 +121,9 @@ namespace CampingAdventure.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream jungle {
+        internal static System.IO.UnmanagedMemoryStream GrizzlyBear {
             get {
-                return ResourceManager.GetStream("jungle", resourceCulture);
+                return ResourceManager.GetStream("GrizzlyBear", resourceCulture);
             }
         }
         
