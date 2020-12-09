@@ -534,14 +534,9 @@ namespace CampingAdventure
                     blueLabel.Text = "";
                     yellowLabel.Text = "";
                     break;
-                default:
-                    break;
             }
         }
-
-      
         
-
         }
     }
     
