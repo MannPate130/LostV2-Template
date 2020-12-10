@@ -127,6 +127,15 @@
   <ItemGroup>
     <None Include="Resources\Campfire for Camping Adventure.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CampForest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CampFox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CampFrontDoor.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

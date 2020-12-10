@@ -387,6 +387,7 @@ namespace CampingAdventure
                     blueLabel.Text = "Explore";
                     yellowLabel.Text = "Share Stories";
                     campFire.Play();
+                    pictureLabel.Image = LostV2.Properties.Resources.CampForest;
                     break;
                 case 1:
                     campFire.Stop();
@@ -400,18 +401,21 @@ namespace CampingAdventure
                     redLabel.Text = "";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "Yes";
+                    pictureLabel.Image = LostV2.Properties.Resources.CampFox;
                     break;
                 case 3:
                     outputLabel.Text = "It's unfortunate that you didn't tame the majestic fox \n\nDo you want to go back to camp?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
+                    pictureLabel.Visible = false;
                     break;
                 case 4:
                     outputLabel.Text = "You've successfully tamed the fox! \n\nHe is now your pet";
                     redLabel.Text = "";
                     blueLabel.Text = "Continue";
                     yellowLabel.Text = "";
+                    pictureLabel.Visible = false;
                     break;
                 case 5:
                     outputLabel.Text = "You continue on your adventure in the vast forest, your friend asks if you have water in your water bottle \n\n you check and see you don't have any, but you spot a river near you \n\n Do you want to go to river for water? ";
@@ -489,6 +493,7 @@ namespace CampingAdventure
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
+                    pictureLabel.Visible = false;
                     break;
                 case 17:
                     outputLabel.Text = "You and your friends decide to check out the abandoned house \n\n\nWhen you arrive you see a strange figure within \n\nContinue?";
@@ -502,24 +507,29 @@ namespace CampingAdventure
                     redLabel.Text = "";
                     blueLabel.Text = "Yes";
                     yellowLabel.Text = "No";
+                    pictureLabel.Visible = true;
+                    pictureLabel.Image = LostV2.Properties.Resources.CampFrontDoor;
                     break;
                 case 19:
                     outputLabel.Text = "You and your friends successfully escaped the strange figure \n\n\nYou decide to explore the house and you find amazing treasure within!";
                     redLabel.Text = "";
                     blueLabel.Text = "Continue";
                     yellowLabel.Text = "";
+                    pictureLabel.Visible = false;
                     break;
                 case 20:
                     outputLabel.Text = "You and your friends decide not to be brave and run away to the safety of your camp";
                     redLabel.Text = "";
                     blueLabel.Text = "Continue";
                     yellowLabel.Text = "";
+                    pictureLabel.Visible = false;
                     break;
                 case 21:
                     outputLabel.Text = "You didn't survive the fight between the strange figure";
                     redLabel.Text = "";
                     blueLabel.Text = "";
                     yellowLabel.Text = "Continue";
+                    pictureLabel.Visible = false;
                     break;
                 case 22:
                     deathPlayer.Play();
