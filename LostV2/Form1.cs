@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
 
 namespace CampingAdventure
 {
@@ -27,13 +28,13 @@ namespace CampingAdventure
         SoundPlayer deathPlayer = new SoundPlayer(LostV2.Properties.Resources.Death_sound);
         SoundPlayer grizzlyBear = new SoundPlayer(LostV2.Properties.Resources.GrizzlyBear);
         SoundPlayer campFire = new SoundPlayer(LostV2.Properties.Resources.CampfireAdventure);
+        SoundPlayer ambulance = new SoundPlayer(LostV2.Properties.Resources.Ambulance_Sound);
 
         public Form1()
         {
             InitializeComponent();
 
             outputLabel.Text = "Welcome! To the start of your amazing Adventure!"; //display initial message and options
-            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -48,7 +49,7 @@ namespace CampingAdventure
                 }
                 else if (scene == 1)
                 {
-                   
+                    
                 }
                 else if (scene == 2)
                 {
@@ -467,6 +468,10 @@ namespace CampingAdventure
                     redLabel.Text = "no";
                     blueLabel.Text = "yes";
                     yellowLabel.Text = "";
+                    ambulance.Play();
+                    Refresh();
+                    Thread.Sleep(8200);
+                    ambulance.Stop();
                     break;
                 case 13:
                     outputLabel.Text = "you and your friend agree to never speak of this incident again";
