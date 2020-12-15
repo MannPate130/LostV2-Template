@@ -384,9 +384,9 @@ namespace CampingAdventure
             {
                 case 0:
                     outputLabel.Text = "You are in the middle of a forest. camping with your friends \n\nWhat is your next move?";
-                    redLabel.Text = "Stay at camp";
-                    blueLabel.Text = "Explore";
-                    yellowLabel.Text = "Share Stories";
+                    redLabel.Text = "Stay at camp (M Key)";
+                    blueLabel.Text = "Explore (B Key)";
+                    yellowLabel.Text = "Share Stories (N Key)";
                     campFire.Play();
                     pictureLabel.Image = LostV2.Properties.Resources.CampForest;
                     break;
@@ -395,50 +395,50 @@ namespace CampingAdventure
                     outputLabel.Text = "You want to explore \n\nYour friends agree. \n\nYou start your exploration of the vast forest!";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "Continue";
+                    yellowLabel.Text = "Continue (N)";
                     break;
                 case 2:
-                    outputLabel.Text = "one of your friends spots a wild fox \n\nTame it?";
+                    outputLabel.Text = "One of your friends spots a wild fox \n\nTame it?";
                     redLabel.Text = "";
-                    blueLabel.Text = "No";
-                    yellowLabel.Text = "Yes";
+                    blueLabel.Text = "No (B)";
+                    yellowLabel.Text = "Yes (N)";
                     pictureLabel.Image = LostV2.Properties.Resources.CampFox;
                     break;
                 case 3:
                     outputLabel.Text = "It's unfortunate that you didn't tame the majestic fox \n\nDo you want to go back to camp?";
-                    redLabel.Text = "Yes";
-                    blueLabel.Text = "No";
+                    redLabel.Text = "Yes (M)";
+                    blueLabel.Text = "No (B)";
                     yellowLabel.Text = "";
                     pictureLabel.Visible = false;
                     break;
                 case 4:
                     outputLabel.Text = "You've successfully tamed the fox! \n\nHe is now your pet";
                     redLabel.Text = "";
-                    blueLabel.Text = "Continue";
+                    blueLabel.Text = "Continue (B)";
                     yellowLabel.Text = "";
                     pictureLabel.Visible = false;
                     break;
                 case 5:
                     outputLabel.Text = "You continue on your adventure in the vast forest, your friend asks if you have water in your water bottle \n\n you check and see you don't have any, but you spot a river near you \n\n Do you want to go to river for water? ";
-                    redLabel.Text = "Yes";
-                    blueLabel.Text = "No";
+                    redLabel.Text = "Yes (M)";
+                    blueLabel.Text = "No (B)";
                     yellowLabel.Text = "";
                     break;
                 case 6:
                     outputLabel.Text = "You decide you don't want to waste your time to get water \n\nYou continue in the forest until you suddenly encounter a deadly Grizzly Bear \n\n What do you do?";
-                    redLabel.Text = "Play Dead";
-                    blueLabel.Text = "Run";
-                    yellowLabel.Text = "Curl up and lay flat";
+                    redLabel.Text = "Play Dead (M)";
+                    blueLabel.Text = "Run (B)";
+                    yellowLabel.Text = "Curl up and lay flat (N)";
                     break;
                 case 7:
                     outputLabel.Text = "You decide to go to the river to get water \n\nDo you drink the water?";
-                    redLabel.Text = "Yes";
-                    blueLabel.Text = "No";
+                    redLabel.Text = "Yes (M)";
+                    blueLabel.Text = "No (B)";
                     yellowLabel.Text = "";
                     break;
                 case 8:
                     outputLabel.Text = "You Died :( \n\n The water had Cholera";
-                    redLabel.Text = "Continue";
+                    redLabel.Text = "Continue (M)";
                     blueLabel.Text = "";
                     yellowLabel.Text = "";
                     break;
@@ -446,27 +446,27 @@ namespace CampingAdventure
                     outputLabel.Text = "\n\nYou drink the water and are back to your journey \n\nYou decide you've explored enough and go back to camp";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "Continue";
+                    yellowLabel.Text = "Continue (N)";
                     break;
                 case 10:
                     outputLabel.Text = "You continue your journey in the forest \nyou spot something shiny \nyou go to investigate the shiny object to find out that it is a loaded gun \n\nyour friend being the idiot that he is takes the gun out of your hand" +
                         " and starts pointing at all of your friends and pretends to shoot you all, \nhe is not aware that the gun is loaded and goes to fire the gun, the bullet hits one of your friends \n\n what do you do?";
-                    redLabel.Text = "run away";
-                    blueLabel.Text = "call ambulance";
+                    redLabel.Text = "Run Away (M)";
+                    blueLabel.Text = "Call Ambulance (B)";
                     yellowLabel.Text = "";
                     break;
                 case 11:
-                    outputLabel.Text = "you decide to run away \n\nyou arrive back at camp and decide to go back \n\na week later your friends dead body is found along with the murder weapon " +
+                    outputLabel.Text = "You decide to run away \n\nyou arrive back at camp and decide to go back \n\na week later your friends dead body is found along with the murder weapon " +
                         "\n\nThrough forensic evidence your friends fingerprint came up on the murder weapon, he was taken in for questioning and you got taken in juvie for 6 monthes";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "continue";
+                    yellowLabel.Text = "Continue (N)";
                     break;
                 case 12:
-                    outputLabel.Text = "as the good friend you are, you call the ambulance \n\nthe ambulance arrives and your friend is taken to the hospital " +
+                    outputLabel.Text = "As the good friend you are, you call the ambulance \n\nthe ambulance arrives and your friend is taken to the hospital " +
                         "\n\nyou go to check on your friend a day later to find out that he has somewhat recovered\n\ndo you speak of what happened?";
-                    redLabel.Text = "no";
-                    blueLabel.Text = "yes";
+                    redLabel.Text = "No (M)";
+                    blueLabel.Text = "yes (B)";
                     yellowLabel.Text = "";
                     ambulance.Play();
                     Refresh();
@@ -474,58 +474,58 @@ namespace CampingAdventure
                     ambulance.Stop();
                     break;
                 case 13:
-                    outputLabel.Text = "you and your friend agree to never speak of this incident again";
+                    outputLabel.Text = "You and your friend agree to never speak of this incident again";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "continue";
+                    yellowLabel.Text = "Continue (N)";
                     break;
                 case 14:
                     outputLabel.Text = "You've survived the bear encounter and run back to the safety of your camp";
                     redLabel.Text = "";
-                    blueLabel.Text = "Continue";
+                    blueLabel.Text = "Continue (B)";
                     yellowLabel.Text = "";
                     break;
                 case 15:
-                    outputLabel.Text = "you decide to talk to your friend about what happened " +
-                        "\n\nyou come to the conclusion of forgiving your friend for pulling the trigger as he didn't know the gun was loaded";
+                    outputLabel.Text = "You decide to talk to your friend about what happened " +
+                        "\n\nYou come to the conclusion of forgiving your friend for pulling the trigger as he didn't know the gun was loaded";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "Continue";
+                    yellowLabel.Text = "Continue (N)";
                     break;
                 case 16:
                     campFire.Stop();
                     outputLabel.Text = "Your friends tell you a story about an abandoned house near where your camping \n\nDo you want to check it out?";
-                    redLabel.Text = "Yes";
-                    blueLabel.Text = "No";
+                    redLabel.Text = "Yes (M)";
+                    blueLabel.Text = "No (B)";
                     yellowLabel.Text = "";
                     pictureLabel.Visible = false;
                     break;
                 case 17:
                     outputLabel.Text = "You and your friends decide to check out the abandoned house \n\n\nWhen you arrive you see a strange figure within \n\nContinue?";
-                    redLabel.Text = "Yes";
-                    blueLabel.Text = "No";
+                    redLabel.Text = "Yes (M)";
+                    blueLabel.Text = "No (B)";
                     yellowLabel.Text = "";
                     break;
                 case 18:
                     outputLabel.Text = "You and your friends decide to be brave and walk through the front door \n\n\nAs soon as you open the front door you see the figure right in front of you" +
                         "\n\nRun away?";
                     redLabel.Text = "";
-                    blueLabel.Text = "Yes";
-                    yellowLabel.Text = "No";
+                    blueLabel.Text = "Yes (M)";
+                    yellowLabel.Text = "No (B)";
                     pictureLabel.Visible = true;
                     pictureLabel.Image = LostV2.Properties.Resources.CampFrontDoor;
                     break;
                 case 19:
                     outputLabel.Text = "You and your friends successfully escaped the strange figure \n\n\nYou decide to explore the house and you find amazing treasure within!";
                     redLabel.Text = "";
-                    blueLabel.Text = "Continue";
+                    blueLabel.Text = "Continue (B)";
                     yellowLabel.Text = "";
                     pictureLabel.Visible = false;
                     break;
                 case 20:
                     outputLabel.Text = "You and your friends decide not to be brave and run away to the safety of your camp";
                     redLabel.Text = "";
-                    blueLabel.Text = "Continue";
+                    blueLabel.Text = "Continue (B)";
                     yellowLabel.Text = "";
                     pictureLabel.Visible = false;
                     break;
@@ -533,14 +533,14 @@ namespace CampingAdventure
                     outputLabel.Text = "You didn't survive the fight between the strange figure";
                     redLabel.Text = "";
                     blueLabel.Text = "";
-                    yellowLabel.Text = "Continue";
+                    yellowLabel.Text = "Continue (N)";
                     pictureLabel.Visible = false;
                     break;
                 case 22:
                     deathPlayer.Play();
                     outputLabel.Text = "Game Over \n\n Play Again?";
-                    redLabel.Text = "Yes";
-                    blueLabel.Text = "No";
+                    redLabel.Text = "Yes (M)";
+                    blueLabel.Text = "No (B)";
                     yellowLabel.Text = "";
                     break;
                 case 23:
