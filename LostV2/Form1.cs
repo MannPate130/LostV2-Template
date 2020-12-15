@@ -43,25 +43,9 @@ namespace CampingAdventure
             // to the next appropriate scene
             if (e.KeyCode == Keys.M)       //red button press
             {
-                if (scene == 0)
-                {
-                    
-                }
-                else if (scene == 1)
-                {
-                    
-                }
-                else if (scene == 2)
-                {
-
-                }
-                else if (scene == 3)
+                if (scene == 3)
                 {
                     scene = 0;
-                }
-                else if (scene == 4)
-                {
-                    
                 }
                 else if (scene == 5)
                 {
@@ -89,33 +73,13 @@ namespace CampingAdventure
                 {
                     scene = 22;
                 }
-                else if (scene == 9)
-                {
-
-                }
                 else if (scene == 10)
                 {
                     scene = 11;
                 }
-                else if (scene == 11)
-                {
-
-                }
                 else if (scene == 12)
                 {
                     scene = 13;
-                }
-                else if (scene == 13)
-                {
-
-                }
-                else if (scene == 14)
-                {
-
-                }
-                else if (scene == 15)
-                {
-
                 }
                 else if (scene == 16)
                 {
@@ -125,29 +89,9 @@ namespace CampingAdventure
                 {
                         scene = 18;
                 }
-                else if (scene == 18)
-                {
-                    
-                }
-                else if (scene == 19)
-                {
-
-                }
-                else if (scene == 20)
-                {
-
-                }
-                else if (scene == 21)
-                {
-
-                }
                 else if (scene == 22)
                 {
                     scene = 0;
-                }
-                else if (scene == 23)
-                {
-
                 }
             }
             else if (e.KeyCode == Keys.B)  //blue button press
@@ -155,10 +99,6 @@ namespace CampingAdventure
                 if (scene == 0)
                 {
                     scene = 1;
-                }
-                else if (scene == 1)
-                {
-                    
                 }
                 else if (scene == 2)
                 {
@@ -184,37 +124,17 @@ namespace CampingAdventure
                 {
                     scene = 9;
                 }
-                else if (scene == 8)
-                {
-
-                }
-                else if (scene == 9)
-                {
-
-                }
                 else if (scene == 10)
                 {
                     scene = 12;
-                }
-                else if (scene == 11)
-                {
-
                 }
                 else if (scene == 12)
                 {
                     scene = 15;
                 }
-                else if (scene == 13)
-                {
-
-                }
                 else if (scene == 14)
                 {
                     scene = 22;
-                }
-                else if (scene == 15)
-                {
-
                 }
                 else if (scene == 16)
                 {
@@ -245,17 +165,9 @@ namespace CampingAdventure
                 {
                     scene = 0;
                 }
-                else if (scene == 21)
-                {
-
-                }
                 else if (scene == 22)
                 {
                     scene = 23;
-                }
-                else if (scene == 23)
-                {
-
                 }
 
             }
@@ -283,65 +195,25 @@ namespace CampingAdventure
                     }
                     
                 }
-                else if (scene == 3)
-                {
-
-                }
-                else if (scene == 4)
-                {
-
-                }
-                else if (scene == 5)
-                {
-
-                }
                 else if (scene == 6)
                 {
                     scene = 14;
-                }
-                else if (scene == 7)
-                {
-
-                }
-                else if (scene == 8)
-                {
-
                 }
                 else if (scene == 9)
                 {
                     scene = 22;
                 }
-                else if (scene == 10)
-                {
-
-                }
                 else if (scene == 11)
                 {
                     scene = 22;
-                }
-                else if (scene == 12)
-                {
-
                 }
                 else if (scene == 13)
                 {
                     scene = 22;
                 }
-                else if (scene == 14)
-                {
-
-                }
                 else if (scene == 15)
                 {
                     scene = 22;
-                }
-                else if (scene == 16)
-                {
-
-                }
-                else if (scene == 17)
-                {
-
                 }
                 else if (scene == 18)
                 {
@@ -357,25 +229,9 @@ namespace CampingAdventure
                     }
                     
                 }
-                else if (scene == 19)
-                {
-
-                }
-                else if (scene == 20)
-                {
-
-                }
                 else if (scene == 21)
                 {
                     scene = 22;
-                }
-                else if (scene == 22)
-                {
-
-                }
-                else if (scene == 23)
-                {
-
                 }
             }
 
